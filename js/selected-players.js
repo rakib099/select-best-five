@@ -5,7 +5,7 @@ for (const button of selectButtons) {
         // Selected Players OL Element
         const selectedPlayersOl = document.getElementById('selected-players');
         const selectedPlayers = selectedPlayersOl.childElementCount;
-
+        
         // Validation
         if (selectedPlayers === 5) {
             alert("You cannot add more than 5 players");
@@ -13,13 +13,14 @@ for (const button of selectButtons) {
         }
         // Getting the player name
         const playerName = button.parentElement.firstElementChild.innerText;
-
+        
         // Adding it to selected players sidebar
         const li = document.createElement('li');
         li.innerText = playerName;
         selectedPlayersOl.appendChild(li);
-
-        console.log(selectedPlayersOl.childElementCount);
+        
+        // Disabling the selected one
+        button.setAttribute('disabled', true);
+        button.style.backgroundColor = "gray";
     });
 }
-// console.log(selectButtons);

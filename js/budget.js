@@ -16,6 +16,10 @@ document.getElementById('btn-calculate').addEventListener('click', function() {
         alert("Please enter a valid amount");
         return;
     }
+    else if (totalSelectedPlayers < 1) {
+        alert("Please select your players first");
+        return;
+    }
 
     // calculating and setting the value to the text element
     const playerExpenseTotal = perPlayerExpense * totalSelectedPlayers;
@@ -33,7 +37,7 @@ document.getElementById('btn-calc-total').addEventListener('click', function() {
 
     // validation
     if (isNaN(managerExpense) || isNaN(coachExpense)) {
-        alert("Please enter an amount in number");
+        alert("Please enter the amounts in number and do not leave any field empty");
         return;
     }
     else if (managerExpense < 0 || coachExpense < 0) {
@@ -44,5 +48,4 @@ document.getElementById('btn-calc-total').addEventListener('click', function() {
     // calculating and setting the value to the text element
     const totalExpense = playerExpenseTotal + managerExpense + coachExpense;
     setTextElementValueById('total-expense', totalExpense);
-    // console.log(totalExpense, coachExpense);
 });
