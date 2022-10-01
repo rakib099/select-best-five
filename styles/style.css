@@ -8,7 +8,6 @@ body {
 h1 {
     font-family: 'Berkshire Swash', cursive;
     font-size: 55px;
-    /* line-height: 18px; */
     margin-top: 0;
     margin-bottom: 17px;
     color: #00ace4;
@@ -21,7 +20,6 @@ header {
 header section {
     display: flex;
     justify-content: center;
-    /* padding: 130px; */
 }
 #header-img {
     position: relative;
@@ -33,19 +31,9 @@ header section {
     top: 18.8rem;
     left: 12rem;
 }
-/* header p, h1 {
-    text-align: center;
-} */
-/* header p {
-    font-size: 20px;
-    color: white;
-    width: 86%;
-    margin-left: 69px;
-} */
 
 /* Main Section */
 .selection-card {
-    /* height: 21.3rem; */
     height: 17rem;
 }
 
@@ -54,7 +42,19 @@ header section {
 }
 
 /* Footer Section */
+footer {
+    background-color: #0c2124;
+}
 #footer-name {
     font-family: 'Berkshire Swash', cursive;
     color: #00ace4;
+}
+
+@media screen and (min-width: 768px) {
+    header section {
+        margin-bottom: 4rem;
+    }
+    footer {
+        margin-top: 4rem;
+    }
 }
