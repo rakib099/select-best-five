@@ -37,3 +37,9 @@ header p {
 .selection-card {
     height: 21.3rem;
 }
+
+/* Footer Section */
+#footer-name {
+    font-family: 'Berkshire Swash', cursive;
+    color: #00ace4;
+}
