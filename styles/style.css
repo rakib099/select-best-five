@@ -1,4 +1,4 @@
-/* FONTS */
+/* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
 
 /* Utilities */
@@ -14,24 +14,24 @@ h1 {
     color: #00ace4;
 }
 
-/* Header */
+/* Header Section */
 header {
     background-color: #0c2124;
 }
 header section {
     display: flex;
     justify-content: center;
-    padding: 130px;
+    /* padding: 130px; */
 }
-header p, h1 {
+/* header p, h1 {
     text-align: center;
-}
-header p {
+} */
+/* header p {
     font-size: 20px;
     color: white;
     width: 86%;
     margin-left: 69px;
-}
+} */
 
 /* Main Section */
 .selection-card {
