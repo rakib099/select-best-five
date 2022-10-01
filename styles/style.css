@@ -32,3 +32,8 @@ header p {
     width: 86%;
     margin-left: 69px;
 }
+
+/* Main Section */
+.selection-card {
+    height: 21.3rem;
+}
