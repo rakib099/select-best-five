@@ -99,7 +99,11 @@
                                     <h5 class="card-title fs-4 text-center">
                                         <u>Selected-V</u>
                                     </h5>
-                                    <ol class="fs-5 fw-semibold">
+                                    <ol class="fs-5">
+                                        <li>Messi</li>
+                                        <li>Neymar</li>
+                                        <li>Caleb</li>
+                                        <li>Ronaldo</li>
                                     </ol>
                                 </div>
                             </div>
@@ -115,13 +119,14 @@
                                         <u>Budget</u>
                                     </h5>
                                     <div class="align-items-center d-flex">
-                                        <label for="player-expense">Per Player</label>
-                                        <input id="player-expense" class="bg-black form-control fw-semibold ms-4 text-white w-50" type="text">
+                                        <label for="per-player-expense">Per Player</label>
+                                        <input id="per-player-expense" class="bg-black form-control fw-semibold ms-4 text-white w-50" type="text">
                                     </div>
                                     <div class="text-center mt-3 mb-4">
-                                        <button class="btn btn-primary text-white fw-semibold px-5">Calculate</button>
+                                        <button id="btn-calculate" class="btn btn-primary text-white fw-semibold px-5">Calculate</button>
                                     </div>
-                                    <p class="fs-5 fw-semibold">Player Expenses: $<span class="fw-semibold text-info">5000</span></p>
+
+                                    <p class="fs-5 fw-semibold">Player Expenses: $<span id="player-expense-total" class="fw-semibold text-info">5000</span></p>
                                     <div class="align-items-center d-flex mb-3">
                                         <label for="manager-expense">Manager</label>
                                         <input id="manager-expense" class="bg-black form-control fw-semibold ms-4 text-white w-50" type="text">
@@ -131,7 +136,7 @@
                                         <input id="coach-expense" class="bg-black form-control fw-semibold ms-4 text-white w-50" type="text">
                                     </div>
                                     <div class="text-center mt-3 mb-4">
-                                        <button class="btn btn-primary text-white fw-semibold px-5">Calculate Total</button>
+                                        <button id="btn-calc-total" class="btn btn-primary text-white fw-semibold px-5">Calculate Total</button>
                                     </div>
                                     <div class="d-flex align-items-center justify-content-center gap-3">
                                         <p class="fw-semibold fs-5">Total:</p>
@@ -151,5 +156,7 @@
         <p class="text-white text-center mb-5">Copyright © 2022 | All Rights Reserved by <span id="footer-name"><a class="text-decoration-none" href="www.facebook.com/rakib.nabi">Rakib Un Nabi</a></span>.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="js/utilities.js"></script>
+    <script src="js/budget.js"></script>
 </body>
 </html>
