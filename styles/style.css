@@ -23,6 +23,16 @@ header section {
     justify-content: center;
     /* padding: 130px; */
 }
+#header-img {
+    position: relative;
+    top: 1.5rem;
+    left: -1rem;
+}
+#img-football {
+    position: absolute;
+    top: 18.8rem;
+    left: 12rem;
+}
 /* header p, h1 {
     text-align: center;
 } */
