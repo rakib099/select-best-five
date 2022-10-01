@@ -38,6 +38,10 @@ header p {
     height: 21.3rem;
 }
 
+#coach-expense {
+    margin-left: 27px;
+}
+
 /* Footer Section */
 #footer-name {
     font-family: 'Berkshire Swash', cursive;
