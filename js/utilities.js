@@ -1,4 +1,4 @@
-
+// Common Functions
 function getInputFieldValueById(fieldId) {
     const inputField = document.getElementById(fieldId);
     const inputFieldString = inputField.value;
