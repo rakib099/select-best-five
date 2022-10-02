@@ -28,9 +28,9 @@ document.getElementById('btn-calculate').addEventListener('click', function() {
     // Calculating and setting the value to the text element
     const playerExpenseTotal = perPlayerExpense * totalSelectedPlayers;
     setTextElementValueById('player-expense-total', playerExpenseTotal);
-
-    console.log(typeof totalSelectedPlayers, totalSelectedPlayers);
 });
+
+
 
 // Calculate Total Button
 document.getElementById('btn-calc-total').addEventListener('click', function() {
@@ -39,12 +39,40 @@ document.getElementById('btn-calc-total').addEventListener('click', function() {
     const managerExpense = getInputFieldValueById('manager-expense');
     const coachExpense = getInputFieldValueById('coach-expense');
 
+    // Input fields
+    const managerExpenseField = document.getElementById('manager-expense');
+    const coachExpenseField = document.getElementById('coach-expense');
+
     // Validation
     if (isNaN(managerExpense) || isNaN(coachExpense)) {
+        // Clearing the fields
+        if (isNaN(managerExpense) && isNaN(coachExpense)) {
+            managerExpenseField.value = "";
+            coachExpenseField.value = "";
+        }
+        else if (isNaN(managerExpense)) {
+            managerExpenseField.value = "";
+        }
+        else if (isNaN(coachExpense)) {
+            coachExpenseField.value = "";
+        }
+
         alert("Please enter the amounts in number and do not leave any field empty");
         return;
     }
     else if (managerExpense < 0 || coachExpense < 0) {
+        // Clearing the fields
+        if (managerExpense < 0 && coachExpense < 0) {
+            managerExpenseField.value = "";
+            coachExpenseField.value = "";
+        }
+        else if (managerExpense < 0) {
+            managerExpenseField.value = "";
+        }
+        else if (coachExpense < 0) {
+            coachExpenseField.value = "";
+        }
+        
         alert("Please enter a valid amount");
         return;
     }
